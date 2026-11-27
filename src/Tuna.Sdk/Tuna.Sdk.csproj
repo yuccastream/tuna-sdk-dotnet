@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsTrimmable>true</IsTrimmable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <PackageId>Tuna.Sdk</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>tuna.am authors</Authors>
+    <Description>Open tuna.am HTTP and TCP tunnels from .NET code.</Description>
+    <PackageTags>tuna;tunnel;localhost;webhook</PackageTags>
+    <PackageProjectUrl>https://tuna.am</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/yuccastream/tuna-sdk-dotnet</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SSH.NET" Version="2026.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="/" />
+    <InternalsVisibleTo Include="Tuna.Sdk.Tests" />
+  </ItemGroup>
+
+</Project>
